@@ -1,0 +1,47 @@
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-3 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.col-2 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+body {
+  font-family: Popins, sans-serif;
+}
+
+.container {
+  width: 1620px;
+  margin: 0 auto;
+}

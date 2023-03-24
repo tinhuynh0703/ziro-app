@@ -1,0 +1,560 @@
+.banner {
+  height: 813px;
+  background-color: #f8f9fd;
+  .banner-left {
+    margin-top: 156px;
+    .text-title {
+      max-width: 650px;
+      font-size: 3.75rem;
+      font-weight: 600;
+      line-height: 5rem;
+      color: #363848;
+      .highlight {
+        color: #5f4bdb;
+      }
+    }
+    .text-description {
+      max-width: 450px;
+      margin-top: 24px;
+      line-height: 1.75rem;
+    }
+    .text-button {
+      margin-top: 60px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .discover {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 600;
+        background-color: #5f4bdb;
+        padding: 16px 32px;
+        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+        border-radius: 37px;
+        font-size: 1.125rem;
+      }
+      .play-button {
+        padding: 16px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        border: 1px solid #f2f2f2;
+      }
+      .watch {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: #363848;
+      }
+    }
+    .text-slide {
+      margin-top: 86px;
+    }
+  }
+  .banner-right {
+    position: relative;
+    .circle1 {
+      position: absolute;
+      top: 184px;
+      left: 529px;
+    }
+    .circle2 {
+      position: absolute;
+      top: 582px;
+      left: 556px;
+    }
+    .circles1 {
+      position: absolute;
+      top: 195px;
+      left: -50px;
+    }
+    .circles2 {
+      position: absolute;
+      top: 636px;
+      left: 638px;
+    }
+    .ellipse {
+      position: absolute;
+      top: 194px;
+      left: 32px;
+    }
+    .emoji {
+      position: absolute;
+      top: 87px;
+      left: 372px;
+    }
+    .bars {
+      position: absolute;
+      top: 296px;
+      left: 500px;
+    }
+    .card-profile {
+      position: absolute;
+      top: 550px;
+      left: -230px;
+      width: 416px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px;
+      background: rgba(255, 255, 255, 0.74);
+      box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+      border-radius: 17px;
+      .info {
+        .name {
+          font-size: 1.625rem;
+          font-weight: 600;
+          color: #000000;
+        }
+        .job {
+          margin: 10px 0;
+          font-size: 0.938rem;
+          font-weight: 400;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.guildline {
+  margin-top: 55px;
+  height: 851px;
+  .guildline-left {
+    a {
+      text-decoration: none;
+      color: #5f4bdb;
+      font-size: 1.25rem;
+    }
+    p {
+      width: 670px;
+      margin-top: 15px;
+      font-size: 3.125rem;
+      font-weight: 600;
+      line-height: 75px;
+      color: #363848;
+    }
+    .step-one {
+      padding: 18px 24px;
+      margin-top: 62px;
+      background: #ffffff;
+      box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
+      border-radius: 20px;
+      width: 650px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title {
+        margin-left: 29px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 32px;
+      }
+    }
+    .step-two {
+      padding: 18px 24px;
+      background: #ffffff;
+      box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+      border-radius: 20px;
+      width: 650px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 34px;
+      .title {
+        margin-left: 29px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 32px;
+      }
+      .description {
+        font-family: "Open Sans", sans-serif;
+        margin-top: 10px;
+        margin-left: 29px;
+        font-size: 1.125rem;
+        font-weight: 400;
+        width: 478px;
+        line-height: 26px;
+        color: #909090;
+      }
+    }
+    .step-three {
+      padding: 18px 24px;
+      background: #ffffff;
+      box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
+      border-radius: 20px;
+      width: 650px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 34px;
+      .title {
+        margin-left: 29px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 32px;
+      }
+    }
+  }
+  .guildline-right {
+    position: relative;
+    .video {
+      position: absolute;
+      top: 131px;
+      padding: 285px 332px;
+      background-color: #c4c4c4;
+      border-radius: 40px;
+    }
+    .circleElement {
+      position: absolute;
+      top: 74px;
+      left: 129px;
+    }
+    .chart {
+      position: absolute;
+      top: 227px;
+      left: 614px;
+    }
+    .line {
+      position: absolute;
+      top: 653px;
+      left: -30px;
+    }
+  }
+}
+
+.feature {
+  .feature-header {
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #363848;
+    }
+    a {
+      text-decoration: none;
+      color: #5f4bdb;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+  }
+  .feature-content {
+    position: relative;
+    margin-top: 43px;
+    margin-left: -20px;
+    margin-right: -20px;
+    .arrow-left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .arrow-right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .card {
+      padding: 40px;
+      background: #ffffff;
+      box-shadow: 0px 2px 28px rgba(62, 53, 120, 0.04);
+      border-radius: 18px;
+      .card-body {
+        display: flex;
+        align-items: center;
+        .content {
+          margin-left: 23px;
+          .name {
+            font-size: 1.25rem;
+            font-weight: 600;
+          }
+          .description {
+            margin-top: 5px;
+            font-size: 0.938rem;
+            font-weight: 400;
+          }
+        }
+      }
+      .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 42px;
+        span {
+          margin-left: 8px;
+          font-weight: 700;
+        }
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          padding: 10px 23px;
+          background-color: #fe8d4d;
+          font-weight: 600;
+          border-radius: 37px;
+        }
+      }
+    }
+  }
+}
+
+.brand {
+  text-align: center;
+  img {
+    padding: 116px 0 84px;
+  }
+}
+
+.review {
+  .review-header {
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .title {
+      color: #363848;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    .description {
+      width: 584px;
+      margin-top: 30px;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+  .review-content {
+    margin-top: 86px;
+    padding: 0 140px;
+    display: flex;
+    .left {
+      position: relative;
+      width: 369px;
+      .placeholder2 {
+        position: absolute;
+      }
+      .comma {
+        position: absolute;
+        top: -25px;
+      }
+      .circles3 {
+        position: absolute;
+        top: 230px;
+        left: -46px;
+      }
+    }
+    .right {
+      width: 917px;
+      margin-left: 62px;
+      margin-top: 36px;
+      .header {
+        display: flex;
+        justify-content: space-between;
+        .name {
+          font-size: 1.25rem;
+          font-weight: 600;
+        }
+        .description {
+          margin-top: 7px;
+          font-weight: 400;
+          color: #3d3d3d;
+        }
+        .star-group {
+          span {
+            margin-left: 20px;
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: #363848;
+          }
+        }
+      }
+      .content {
+        margin-top: 30px;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 28px;
+        color: #363848;
+      }
+      .footer {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .arrow-right {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.counting {
+  margin-top: 130px;
+  margin-bottom: 150px;
+  .container {
+    position: relative;
+    .row {
+      position: absolute;
+      top: 85px;
+      left: 160px;
+      width: 1300px;
+      .group {
+        text-align: center;
+        .amount {
+          font-size: 3.75rem;
+          font-weight: 600;
+          color: #ffffff;
+          line-height: 90px;
+        }
+        .description {
+          margin-top: 20px;
+          font-size: 1.125rem;
+          font-weight: 400;
+          color: #ffffff;
+        }
+      }
+    }
+    .mask-group {
+      background: #5f4bdb;
+      border-radius: 20px;
+    }
+  }
+}
+
+.pricing {
+  background-color: #fdfdfd;
+  padding: 60px 0;
+  .pricing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .title {
+      color: #363848;
+      font-size: 2.5rem;
+      font-weight: 600;
+      line-height: 60px;
+    }
+    .description {
+      width: 716px;
+      margin-top: 30px;
+      color: rgba(0, 0, 0, 0.6);
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+  .pricing-content {
+    margin-top: 90px;
+    .row {
+      padding: 0 140px;
+      .bold-shadow {
+        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14) !important;
+      }
+      .card {
+        text-align: center;
+        padding: 45px;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 28px rgba(62, 53, 120, 0.07);
+        border-radius: 20px;
+        .card-header {
+          .title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #363848;
+          }
+        }
+        .card-price {
+          margin-top: 38px;
+          .price {
+            font-size: 3.75rem;
+            font-weight: 600;
+            color: #363848;
+            line-height: 90px;
+          }
+          .about {
+            font-size: 1.125rem;
+          }
+        }
+        .card-body {
+          margin-top: 53px;
+          .description {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            span {
+              margin-left: 30px;
+            }
+          }
+        }
+        .card-footer {
+          margin-top: 53px;
+          a {
+            padding: 16px 102px;
+            text-decoration: none;
+            background-color: #f7f5ff;
+            border-radius: 60px;
+            color: #5f4bdb;
+            font-size: 1.125rem;
+            font-weight: 600;
+          }
+          .btn-purple {
+            background-color: #5f4bdb;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  background-color: #1f2131;
+  margin-top: 230px;
+  .signup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 107px 0;
+    p {
+      width: 750px;
+      font-size: 2.75rem;
+      font-weight: 600;
+      line-height: 76px;
+      color: #ffffff;
+    }
+    .register {
+      padding: 10px;
+      width: 546px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #3d3f4e;
+      background-color: #1f2131;
+      border-radius: 37px;
+      #register-input {
+        background-color: #1f2131;
+        margin-left: 37px;
+        border: none;
+        outline: none;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: #72737c;
+      }
+      .subscribe-btn {
+        text-decoration: none;
+        padding: 16px 50px;
+        font-size: 1.125rem;
+        font-weight: 600;
+        background-color: #fe8d4d;
+        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+        border-radius: 37px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+  }
+}
