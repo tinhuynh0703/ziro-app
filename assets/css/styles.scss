@@ -1,0 +1,102 @@
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+  margin: 0 -12px;
+}
+
+.col-6 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-3 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-4 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+
+.col-2 {
+  padding: 0 20px;
+  flex: 0 0 auto;
+  width: 16.6666666667%;
+}
+
+body {
+  font-family: Popins, sans-serif;
+}
+
+.container {
+  width: 1620px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media screen and (max-width: 1400px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  .navbar {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
+  .login,
+  .register {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer-start {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    img {
+      width: 100%;
+    }
+  }
+
+  // .circle1,
+  // .circle2,
+  // .circles1,
+  // .circles2,
+  // .ellipse,
+  // .emoji,
+  // .bars,
+  // .card-profile {
+  //   width: 100%;
+  // }
+}
