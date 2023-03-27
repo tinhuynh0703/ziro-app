@@ -36,6 +36,11 @@
   border-radius: 37px;
   font-size: 1.125rem;
 }
+.banner .banner-left .text-button .discover:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 .banner .banner-left .text-button .play-button {
   padding: 16px;
   border-radius: 50%;
@@ -47,6 +52,10 @@
   font-weight: 500;
   font-size: 1.125rem;
   color: #363848;
+}
+.banner .banner-left .text-button .watch:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .banner .banner-left .text-slide {
   margin-top: 86px;
@@ -86,8 +95,12 @@
 }
 .banner .banner-right .bars {
   position: absolute;
-  top: 296px;
-  left: 500px;
+  top: 276px;
+  left: 484px;
+}
+.banner .banner-right .card-profile:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 .banner .banner-right .card-profile {
   position: absolute;
@@ -241,6 +254,7 @@
 }
 .feature .feature-content .arrow-left {
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -248,10 +262,16 @@
 }
 .feature .feature-content .arrow-right {
   position: absolute;
+  z-index: 1;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   cursor: pointer;
+}
+.feature .feature-content .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
 }
 .feature .feature-content .card {
   padding: 40px;
@@ -413,6 +433,7 @@
 .counting .container .mask-group {
   background: #5f4bdb;
   border-radius: 20px;
+  width: 100%;
 }
 
 .pricing {

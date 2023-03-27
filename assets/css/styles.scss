@@ -11,6 +11,7 @@
 
 .row {
   display: flex;
+  margin: 0 -12px;
 }
 
 .col-6 {
@@ -44,4 +45,58 @@ body {
 .container {
   width: 1620px;
   margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media screen and (max-width: 1400px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+  .navbar {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+
+  .login,
+  .register {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .footer-start {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    img {
+      width: 100%;
+    }
+  }
+
+  // .circle1,
+  // .circle2,
+  // .circles1,
+  // .circles2,
+  // .ellipse,
+  // .emoji,
+  // .bars,
+  // .card-profile {
+  //   width: 100%;
+  // }
 }

@@ -15,7 +15,7 @@
       <a class="logo">
         <img src="/assets/img/logo.svg" alt="logo">
       </a>
-      <ul class="navbar">
+      <ul class="navbar active">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -38,6 +38,9 @@
       <div class="auth">
         <a class="login" href="#">Login</a>
         <a class="register" href="#">Sign up</a>
+      </div>
+      <div class="navbar-toggle">
+        <img width="40px" height="40px" src="/assets/img/menu-icon.png" alt="">
       </div>
     </div>
   </header>
@@ -514,6 +517,15 @@
     </div>
     </div>
   </footer>
+  <script>
+    const menuToggle = document.querySelector('.navbar-toggle');
+    console.log(menuToggle)
+    const menu = document.querySelector('.navbar');
+    console.log(menu)
+    menuToggle.addEventListener('click', function () {
+      menu.classList.toggle('active');
+    })
+  </script>
 </body>
 
 </html>
