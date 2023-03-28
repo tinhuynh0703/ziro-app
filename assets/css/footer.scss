@@ -3,11 +3,13 @@ footer {
   padding-top: 143px;
   .footer-about {
     .footer-start {
-      padding-bottom: 127px;
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 7.938rem;
       .footer-left {
         .description {
           font-family: "Open Sans", sans-serif;
-          width: 427px;
+          width: 26.688rem;
           margin-top: 52px;
           font-weight: 400;
           color: #ffffff;
@@ -21,28 +23,30 @@ footer {
         }
       }
       .footer-right {
-        margin-left: 114px;
-        width: 1193px;
-        .row {
-          margin-top: 20px;
-          .title {
-            color: #ffffff;
-            font-weight: 600;
-            font-size: 1.25rem;
-          }
-          .list {
-            margin-top: 24px;
-            list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4rem;
+        div:nth-child(4) {
+          width: 17.813rem;
+        }
+        .title {
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 1.25rem;
+        }
+        .list {
+          margin-top: 24px;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          a {
+            margin-top: 20px;
             display: flex;
-            flex-direction: column;
-            gap: 12px;
-            a {
-              margin-top: 20px;
-              display: flex;
-              gap: 18px;
-              text-decoration: none;
-              color: #ffffff;
-            }
+            gap: 18px;
+            text-decoration: none;
+            color: #ffffff;
           }
         }
       }

@@ -3,11 +3,13 @@ footer {
   padding-top: 143px;
 }
 footer .footer-about .footer-start {
-  padding-bottom: 127px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7.938rem;
 }
 footer .footer-about .footer-start .footer-left .description {
   font-family: "Open Sans", sans-serif;
-  width: 427px;
+  width: 26.688rem;
   margin-top: 52px;
   font-weight: 400;
   color: #ffffff;
@@ -20,25 +22,27 @@ footer .footer-about .footer-start .footer-left .brand-group .icon {
   cursor: pointer;
 }
 footer .footer-about .footer-start .footer-right {
-  margin-left: 114px;
-  width: 1193px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
-footer .footer-about .footer-start .footer-right .row {
-  margin-top: 20px;
+footer .footer-about .footer-start .footer-right div:nth-child(4) {
+  width: 17.813rem;
 }
-footer .footer-about .footer-start .footer-right .row .title {
+footer .footer-about .footer-start .footer-right .title {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.25rem;
 }
-footer .footer-about .footer-start .footer-right .row .list {
+footer .footer-about .footer-start .footer-right .list {
   margin-top: 24px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-footer .footer-about .footer-start .footer-right .row .list a {
+footer .footer-about .footer-start .footer-right .list a {
   margin-top: 20px;
   display: flex;
   gap: 18px;

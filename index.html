@@ -15,7 +15,7 @@
       <a class="logo">
         <img src="/assets/img/logo.svg" alt="logo">
       </a>
-      <ul class="navbar active">
+      <ul class="navbar">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -36,49 +36,66 @@
         </label>
       </form>
       <div class="auth">
-        <a class="login" href="#">Login</a>
-        <a class="register" href="#">Sign up</a>
+        <button class="login">Login</button>
+        <button class="register">Sign up</button>
       </div>
       <div class="navbar-toggle">
-        <img width="40px" height="40px" src="/assets/img/menu-icon.png" alt="">
+        <img width="30px" height="30px" src="/assets/img/menu-icon.png" alt="">
+      </div>
+    </div>
+    <!-- Collapse -->
+    <div class="collapse">
+      <div class="container-collapse">
+        <ul class="navbar-collapse">
+          <li class="nav-collapse-item">
+            <a class="nav-collapse-link" href="#">Home</a>
+          </li>
+          <li class="nav-collapse-item">
+            <a class="nav-collapse-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-collapse-item">
+            <a class="nav-collapse-link" href="#">Blog</a>
+          </li>
+          <li class="nav-collapse-item">
+            <a class="nav-collapse-link" href="#">Become a member</a>
+          </li>
+        </ul>
+        <div class="auth-collapse">
+          <button class="login-collapse">Login</button>
+          <button class="register-collapse">Sign up</button>
+        </div>
       </div>
     </div>
   </header>
   <main>
     <!-- BANNER SECTION -->
     <div class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 banner-left">
-            <p class="text-title">
-              Find out
-              <span class="highlight"> talented freelancer </span>
-              with better review faster
-            </p>
-            <p class="text-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-            <div class="text-button">
-              <a class="discover">Discover Now</a>
-              <img class="play-button" src="assets/img/play-button.svg" alt="play button">
-              <a class="watch">Watch Demo</a>
-            </div>
-            <div class="text-slide">
-              <img class="slide" src="assets/img/bar1.svg" alt="slide">
-              <img class="slide" src="assets/img/bar.svg" alt="slide">
-              <img class="slide" src="assets/img/bar1.svg" alt="slide">
-              <img class="slide" src="assets/img/bar1.svg" alt="slide">
-            </div>
+      <div class="container container-banner">
+
+        <div class="banner-left">
+          <p class="text-title">
+            Find out
+            <span class="highlight"> talented freelancer </span>
+            with better review faster
+          </p>
+          <p class="text-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <div class="text-button">
+            <a class="discover">Discover Now</a>
+            <img class="play-button" src="assets/img/play-button.svg" alt="play button">
+            <a class="watch">Watch Demo</a>
           </div>
-          <div class="col-6 banner-right">
-            <img class="ellipse" src="assets/img/Ellipse.svg" alt="banner">
-            <img class="emoji" src="assets/img/emoji.svg" alt="banner">
-            <img class="bars" src="assets/img/bars.svg" alt="banner">
-            <img class="circle1" src="assets/img/circle1.svg" alt="banner">
-            <img class="circle2" src="assets/img/circle2.svg" alt="banner">
-            <img class="circles1" src="assets/img/circles1.svg" alt="banner">
-            <img class="circles2" src="assets/img/circles2.svg" alt="banner">
+          <div class="text-slide">
+            <img class="slide" src="assets/img/bar1.svg" alt="slide">
+            <img class="slide" src="assets/img/bar.svg" alt="slide">
+            <img class="slide" src="assets/img/bar1.svg" alt="slide">
+            <img class="slide" src="assets/img/bar1.svg" alt="slide">
+          </div>
+        </div>
+        <div class="banner-right">
+          <div class="ellipse">
             <div class="card-profile">
               <img class="board-img" src="assets/img/placeholder.svg" alt="banner">
               <div class="info">
@@ -95,41 +112,49 @@
                 <img class="close" src="assets/img/close.svg" alt="banner">
               </div>
             </div>
+            <img class="emoji" src="assets/img/emoji.svg" alt="banner">
+            <img class="bars" src="assets/img/bars.svg" alt="banner">
+            <img class="circle1" src="assets/img/circle1.svg" alt="banner">
+            <img class="circle2" src="assets/img/circle2.svg" alt="banner">
+            <img class="circles1" src="assets/img/circles1.svg" alt="banner">
+            <img class="circles2" src="assets/img/circles2.svg" alt="banner">
           </div>
+
         </div>
       </div>
     </div>
     <!-- GUILDLINE SECTION -->
     <div class="guildline">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 guildline-left">
-            <a href="#">How it works</a>
-            <p>Start find a job you love with us easily</p>
-            <div class="step-one">
-              <img src="assets/img/number1.svg">
-              <p class="title">Complete Profile</p>
-              <img src="assets/img/arrow.svg" alt="arrow">
-            </div>
-            <div class="step-two">
-              <img src="assets/img/number2.svg">
-              <div>
-                <p class="title">Search Vacancies</p>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                  incididunt ut labore
-                  et
-                  dolore magna aliqua.</p>
-              </div>
-            </div>
-            <div class="step-three">
-              <img src="assets/img/number3.svg">
-              <p class="title">Apply Jobs</p>
-              <img src="assets/img/arrow.svg" alt="arrow">
+      <div class="container container-guildline">
+        <div class="guildline-left">
+          <a href="#">How it works</a>
+          <p>Start find a job you love with us easily</p>
+          <div class="step-one">
+            <img src="assets/img/number1.svg">
+            <p class="title">Complete Profile</p>
+            <img src="assets/img/arrow.svg" alt="arrow">
+          </div>
+          <div class="step-two">
+            <img src="assets/img/number2.svg">
+            <div>
+              <p class="title">Search Vacancies</p>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore
+                et
+                dolore magna aliqua.
+              </p>
             </div>
           </div>
-          <div class="col-6 guildline-right">
+          <div class="step-three">
+            <img src="assets/img/number3.svg">
+            <p class="title">Apply Jobs</p>
+            <img src="assets/img/arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="guildline-right">
+          <div class="video-bg">
             <img class="circleElement" src="assets/img/circleElement.svg" alt="placeholder">
-            <img class="video" src="assets/img/iconPlayvideo.svg" alt="placeholder">
+            <img class="video-btn" src="assets/img/iconPlayvideo.svg" alt="placeholder">
             <img class="chart" src="assets/img/chart.svg" alt="placeholder">
             <img class="line" src="assets/img/lines.svg" alt="placeholder">
           </div>
@@ -138,103 +163,94 @@
     </div>
     <!-- FEATURE SECTION -->
     <div class="feature">
-      <div class="container">
-        <div class="row feature-header">
+      <div class="container container-feature">
+        <div class="feature-header">
           <p>Featured profile this week</p>
           <a href="#">View more</a>
         </div>
-        <div class="row feature-content">
+        <div class="feature-content">
           <img class="arrow-left" src="assets/img/arrowLeft.svg">
           <img class="arrow-right" src="assets/img/arrowRight.svg">
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/img/avatar.svg">
-                <div class="content">
-                  <p class="name">David Hutapea</p>
-                  <p class="description">UI/UX Designer</p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="review">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
-                  <span>4.3</span>
-                </div>
-                <a href="#">$84/hr</a>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/avatar.svg">
+              <div class="content">
+                <p class="name">David Hutapea</p>
+                <p class="description">UI/UX Designer</p>
               </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/img/avatar.svg">
-                <div class="content">
-                  <p class="name">David Hutapea</p>
-                  <p class="description">UI/UX Designer</p>
-                </div>
+            <div class="card-footer">
+              <div class="review">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
+                <span>4.3</span>
               </div>
-              <div class="card-footer">
-                <div class="review">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
-                  <span>4.3</span>
-                </div>
-                <a href="#">$84/hr</a>
-              </div>
+              <a href="#">$84/hr</a>
             </div>
           </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/img/avatar.svg">
-                <div class="content">
-                  <p class="name">David Hutapea</p>
-                  <p class="description">UI/UX Designer</p>
-                </div>
-              </div>
-              <div class="card-footer">
-                <div class="review">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
-                  <span>4.3</span>
-                </div>
-                <a href="#">$84/hr</a>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/avatar.svg">
+              <div class="content">
+                <p class="name">David Hutapea</p>
+                <p class="description">UI/UX Designer</p>
               </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="card">
-              <div class="card-body">
-                <img src="assets/img/avatar.svg">
-                <div class="content">
-                  <p class="name">David Hutapea</p>
-                  <p class="description">UI/UX Designer</p>
-                </div>
+            <div class="card-footer">
+              <div class="review">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
+                <span>4.3</span>
               </div>
-              <div class="card-footer">
-                <div class="review">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/star.svg">
-                  <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
-                  <span>4.3</span>
-                </div>
-                <a href="#">$84/hr</a>
-              </div>
+              <a href="#">$84/hr</a>
             </div>
           </div>
-
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/avatar.svg">
+              <div class="content">
+                <p class="name">David Hutapea</p>
+                <p class="description">UI/UX Designer</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="review">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
+                <span>4.3</span>
+              </div>
+              <a href="#">$84/hr</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/img/avatar.svg">
+              <div class="content">
+                <p class="name">David Hutapea</p>
+                <p class="description">UI/UX Designer</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="review">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/star.svg">
+                <img width="16" height="16" class="star" src="assets/img/empty-star.svg">
+                <span>4.3</span>
+              </div>
+              <a href="#">$84/hr</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -295,21 +311,20 @@
     <!-- COUNTING SECTION -->
     <div class="counting">
       <div class="container">
-        <img class="mask-group" src="assets/img/maskGroup.svg" alt="">
-        <div class="row">
-          <div class="col-3 group">
+        <div class="mask-group">
+          <div class="group">
             <p class="amount">36,789+</p>
             <p class="description">Talented Freelancer</p>
           </div>
-          <div class="col-3 group">
+          <div class="group">
             <p class="amount">458,973</p>
             <p class="description">Visitors</p>
           </div>
-          <div class="col-3 group">
+          <div class="group">
             <p class="amount">56,461</p>
             <p class="description">Contract Made</p>
           </div>
-          <div class="col-3 group">
+          <div class="group">
             <p class="amount">852k</p>
             <p class="description">Companies</p>
           </div>
@@ -325,92 +340,85 @@
             incididunt ut labore et dolore magna aliqua</p>
         </div>
         <div class="pricing-content">
-          <div class="row">
-            <div class="col-4">
-              <div class="card">
-                <div class="card-header">
-                  <p class="title">FREE</p>
-                </div>
-                <div class="card-price">
-                  <p class="price">$ 0</p>
-                  <p class="about">per month</p>
-                </div>
-                <div class="card-body">
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Lorem ipsum dolor sit ame</span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Consectetur adipiscing elit, sed Do </span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>eiusmod tempor incididunt</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#">Learn more</a>
-                </div>
+          <div class="card">
+            <div class="card-header">
+              <p class="title">FREE</p>
+            </div>
+            <div class="card-price">
+              <p class="price">$ 0</p>
+              <p class="about">per month</p>
+            </div>
+            <div class="card-body">
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Lorem ipsum dolor sit ame</span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Consectetur adipiscing elit, sed Do </span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>eiusmod tempor incididunt</span>
               </div>
             </div>
-            <div class="col-4">
-              <div class="card bold-shadow">
-                <div class="card-header">
-                  <p class="title">PREMIUM</p>
-                </div>
-                <div class="card-price">
-                  <p class="price">$ 175</p>
-                  <p class="about">per month</p>
-                </div>
-                <div class="card-body">
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Lorem ipsum dolor sit ame</span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Consectetur adipiscing elit, sed Do </span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>eiusmod tempor incididunt</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a class="btn-purple" href="#">Learn more</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card">
-                <div class="card-header">
-                  <p class="title">PLATINUM</p>
-                </div>
-                <div class="card-price">
-                  <p class="price">$ 500</p>
-                  <p class="about">per month</p>
-                </div>
-                <div class="card-body">
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Lorem ipsum dolor sit ame</span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>Consectetur adipiscing elit, sed Do </span>
-                  </div>
-                  <div class="description">
-                    <img src="assets/img/tick.svg">
-                    <span>eiusmod tempor incididunt</span>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <a href="#">Learn more</a>
-                </div>
-              </div>
+            <div class="card-footer">
+              <button>Learn more</button>
             </div>
           </div>
+          <div class="card bold-shadow">
+            <div class="card-header">
+              <p class="title">PREMIUM</p>
+            </div>
+            <div class="card-price">
+              <p class="price">$ 175</p>
+              <p class="about">per month</p>
+            </div>
+            <div class="card-body">
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Lorem ipsum dolor sit ame</span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Consectetur adipiscing elit, sed Do </span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>eiusmod tempor incididunt</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn-purple">Learn more</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <p class="title">PLATINUM</p>
+            </div>
+            <div class="card-price">
+              <p class="price">$ 500</p>
+              <p class="about">per month</p>
+            </div>
+            <div class="card-body">
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Lorem ipsum dolor sit ame</span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>Consectetur adipiscing elit, sed Do </span>
+              </div>
+              <div class="description">
+                <img src="assets/img/tick.svg">
+                <span>eiusmod tempor incididunt</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class=""></div>
         </div>
       </div>
     </div>
@@ -431,7 +439,7 @@
   <footer>
     <div class="footer-about">
       <div class="container">
-        <div class="row footer-start">
+        <div class="footer-start">
           <div class="footer-left">
             <img class="logo" src="assets/img/logo2.svg" alt="">
             <div class="description">Ziro is a Freelance Landing Website lorem ipsum dolor sit amet, consectetur
@@ -448,83 +456,82 @@
             </div>
           </div>
           <div class="footer-right">
-            <div class="row">
-              <div class="col-3">
-                <p class="title">Ziro</p>
-                <ul class="list">
-                  <li><a href="#">Why Ziro</a></li>
-                  <li><a href="#">Enterprise</a></li>
-                  <li><a href="#">Customer Story</a></li>
-                  <li><a href="#">Security</a></li>
-                  <li><a href="#">Pricing</a></li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <p class="title">Resources</p>
-                <ul class="list">
-                  <li><a href="#">Download</a></li>
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Guides</a></li>
-                  <li><a href="#">Partner</a></li>
-                  <li><a href="#">Directories</a></li>
-                </ul>
-              </div>
-              <div class="col-2">
-                <p class="title">Company</p>
-                <ul class="list">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Login</a></li>
-                  <li><a href="#">Sign Up</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </div>
-              <div class="col-4">
-                <p class="title">Get in Touch with Us</p>
-                <ul class="list">
-                  <li>
-                    <a href="#">
-                      <img src="assets/img/map-marker.svg" alt="">
-                      <span>832 Thompson Drive, San Fransisco
-                        CA 94107, United States</span>
-                    </a>
-                  </li>
-                  </a></li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/img/phone.svg" alt="">
-                      <span>+123 345123 556</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/img/mail.svg" alt="">
-                      <span>support@ziro.id</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div>
+              <p class="title">Ziro</p>
+              <ul class="list">
+                <li><a href="#">Why Ziro</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li><a href="#">Customer Story</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div>
+
+              <p class="title">Resources</p>
+              <ul class="list">
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Partner</a></li>
+                <li><a href="#">Directories</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">Company</p>
+              <ul class="list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="title">Get in Touch with Us</p>
+              <ul class="list">
+                <li>
+                  <a href="#">
+                    <img src="assets/img/map-marker.svg" alt="">
+                    <span>832 Thompson Drive, San Fransisco
+                      CA 94107, United States</span>
+                  </a>
+                </li>
+                </a></li>
+                <li>
+                  <a href="#">
+                    <img src="assets/img/phone.svg" alt="">
+                    <span>+123 345123 556</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/img/mail.svg" alt="">
+                    <span>support@ziro.id</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="row footer-end">
+        <div class="footer-end">
           <p class="copyright">Ziro Freelancer Landing Website - © 2020 All Rights Reserved</p>
           <p class="author">Made with <span style="color:red">♥</span> by Peterdraw</p>
         </div>
       </div>
     </div>
-    </div>
   </footer>
+
   <script>
     const menuToggle = document.querySelector('.navbar-toggle');
-    console.log(menuToggle)
-    const menu = document.querySelector('.navbar');
-    console.log(menu)
-    menuToggle.addEventListener('click', function () {
-      menu.classList.toggle('active');
-    })
+    const menu = document.querySelector('.collapse');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function () {
+        menu.classList.toggle('active');
+      })
+    }
   </script>
 </body>
 
