@@ -89,16 +89,6 @@ body {
   .comma {
     scale: 0.8;
   }
-  .pricing-content {
-    // flex-wrap: wrap;
-    // gap: 20px;
-    // .card {
-    //   width: 100%;
-    //   .card-body {
-    //     text-align: center;
-    //   }
-    // }
-  }
 }
 
 @media (max-width: 1199.5px) {
@@ -115,8 +105,8 @@ body {
     justify-content: center;
     .banner-right {
       position: absolute;
-      opacity: 0.3;
       margin: 0 auto;
+      filter: blur(3px);
     }
     .banner-left {
       z-index: 1;
