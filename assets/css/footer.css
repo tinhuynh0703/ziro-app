@@ -1,54 +1,58 @@
 footer {
   background-color: #1f2131;
-  padding-top: 143px;
+  padding-top: 8.938rem;
 }
 footer .footer-about .footer-start {
-  padding-bottom: 127px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7.938rem;
 }
 footer .footer-about .footer-start .footer-left .description {
   font-family: "Open Sans", sans-serif;
-  width: 427px;
-  margin-top: 52px;
+  width: 26.688rem;
+  margin-top: 3.25rem;
   font-weight: 400;
   color: #ffffff;
   line-height: 24px;
 }
 footer .footer-about .footer-start .footer-left .brand-group {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 footer .footer-about .footer-start .footer-left .brand-group .icon {
   cursor: pointer;
 }
 footer .footer-about .footer-start .footer-right {
-  margin-left: 114px;
-  width: 1193px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
 }
-footer .footer-about .footer-start .footer-right .row {
-  margin-top: 20px;
+footer .footer-about .footer-start .footer-right div:nth-child(4) {
+  width: 17.813rem;
 }
-footer .footer-about .footer-start .footer-right .row .title {
+footer .footer-about .footer-start .footer-right .title {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.25rem;
 }
-footer .footer-about .footer-start .footer-right .row .list {
-  margin-top: 24px;
+footer .footer-about .footer-start .footer-right .list {
+  margin-top: 1.5rem;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-footer .footer-about .footer-start .footer-right .row .list a {
-  margin-top: 20px;
+footer .footer-about .footer-start .footer-right .list a {
+  margin-top: 1.25rem;
   display: flex;
-  gap: 18px;
+  gap: 1.125rem;
   text-decoration: none;
   color: #ffffff;
 }
 footer .footer-about .footer-end {
   display: flex;
   justify-content: space-between;
-  padding: 26px 0;
+  padding: 1.625rem 0;
   border-top: 1px solid #3d3f4e;
 }
 footer .footer-about .footer-end .copyright {
@@ -60,4 +64,5 @@ footer .footer-about .footer-end .author {
   font-weight: 400;
   line-height: 24px;
   color: #ffffff;
+  white-space: nowrap;
 }/*# sourceMappingURL=footer.css.map */

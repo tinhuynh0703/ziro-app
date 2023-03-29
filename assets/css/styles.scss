@@ -7,35 +7,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-}
-
-.row {
-  display: flex;
-  margin: 0 -12px;
-}
-
-.col-6 {
-  padding: 0 20px;
-  flex: 0 0 auto;
-  width: 50%;
-}
-
-.col-3 {
-  padding: 0 20px;
-  flex: 0 0 auto;
-  width: 25%;
-}
-
-.col-4 {
-  padding: 0 20px;
-  flex: 0 0 auto;
-  width: 33.3333333333%;
-}
-
-.col-2 {
-  padding: 0 20px;
-  flex: 0 0 auto;
-  width: 16.6666666667%;
+  transition: all 0.5s ease-in-out;
 }
 
 body {
@@ -43,60 +15,251 @@ body {
 }
 
 .container {
-  width: 1620px;
-  margin: 0 auto;
-  padding: 0 12px;
+  max-width: 1620px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-@media screen and (max-width: 1400px) {
-  .search {
-    display: none;
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.5px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .container-header {
+    flex-direction: column;
+    gap: 20px;
+    .search {
+      margin: 0;
+      width: 100%;
+    }
   }
 }
 
-@media screen and (max-width: 1200px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 960px;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
   html {
     font-size: 12px;
   }
-  .navbar {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
-
-  .login,
-  .register {
-    display: none;
-  }
-
-  .navbar-toggle {
-    display: block;
-    padding: 0 20px;
-  }
-
   .container {
-    width: 100%;
+    max-width: 1140px;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  html {
+    font-size: 14px;
+  }
+  .ellipse {
+    .bars {
+      right: -20px !important;
+    }
+  }
+}
+
+@media (max-width: 1399.5px) {
+  .ellipse {
+    scale: 0.8;
+  }
+  .video-bg {
+    scale: 0.8;
+  }
+  .placeholder2 {
+    scale: 0.8;
+  }
+  .circles3 {
+    scale: 0.8;
+  }
+  .comma {
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 1199.5px) {
+  .signup-content {
+    .register {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 991.5px) {
+  .container-banner {
+    position: relative;
+    justify-content: center;
+    .banner-right {
+      position: absolute;
+      margin: 0 auto;
+      filter: blur(3px);
+    }
+    .banner-left {
+      z-index: 1;
+    }
+  }
+  .ellipse {
+    scale: 0.6;
+  }
+
+  .signup {
+    .signup-content {
+      flex-wrap: wrap;
+    }
+  }
+
+  .container-guildline {
+    flex-direction: column;
+    gap: 30px;
+    .guildline-left {
+      .step-one,
+      .step-two,
+      .step-three {
+        width: 100%;
+      }
+    }
+    .guildline-right {
+      margin: 0 auto;
+    }
+  }
+
+  .review-content {
+    flex-direction: column;
+    .right {
+      margin: 0 !important;
+      .customer {
+        scale: 0.8;
+      }
+      .arrow-right {
+        scale: 0.8;
+      }
+      .arrow-left-white {
+        scale: 0.8;
+      }
+    }
+    .left {
+      display: none;
+    }
+  }
+
+  .counting {
+    .mask-group {
+      flex-direction: column;
+      gap: 2rem;
+      .group {
+        .description {
+          margin: 0;
+        }
+      }
+    }
   }
 
   .footer-start {
     flex-wrap: wrap;
+    gap: 30px;
+    .footer-left {
+      .description {
+        margin: 0;
+        width: 100% !important;
+      }
+    }
   }
+}
 
-  .brand {
-    img {
-      width: 100%;
+@media (max-width: 767.5px) {
+  .container {
+    max-width: 540px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .container-header {
+    flex-direction: row;
+    justify-content: space-between;
+    .logo {
+      img {
+        width: 100px;
+      }
     }
   }
 
-  // .circle1,
-  // .circle2,
-  // .circles1,
-  // .circles2,
-  // .ellipse,
-  // .emoji,
-  // .bars,
-  // .card-profile {
-  //   width: 100%;
-  // }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar,
+  .auth {
+    display: none;
+  }
+}
+
+@media (max-width: 575.5px) {
+  .container {
+    max-width: 100%;
+  }
+  .container-header {
+    flex-wrap: wrap;
+    .search {
+      order: 2;
+      margin: 20px 0px;
+      width: 100%;
+    }
+  }
+  .banner-right {
+    width: 100%;
+    .ellipse {
+      scale: 0.45;
+    }
+  }
+  .guildline-right {
+    width: 100%;
+  }
+  .auth-collapse {
+    flex-direction: column;
+    gap: 20px;
+    .register-collapse {
+      margin: 0 !important;
+    }
+  }
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .ellipse {
+    scale: 0.3 !important;
+    .bars {
+      right: 0 !important;
+    }
+    .circles2 {
+      right: 0 !important;
+    }
+  }
+  .video-bg {
+    width: 100% !important;
+  }
+  .arrow-right {
+    margin-left: 0 !important;
+  }
+  .pricing-content {
+    .card {
+      .card-body {
+        .description {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }
