@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
 }
 
 body {
@@ -26,9 +27,6 @@ body {
   }
   .container {
     max-width: 720px;
-  }
-  html {
-    font-size: 12px;
   }
   .container-header {
     flex-direction: column;
@@ -92,19 +90,23 @@ body {
     scale: 0.8;
   }
   .pricing-content {
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center !important;
-    .card {
-      width: 100%;
-      .card-body {
-        text-align: center;
-      }
-    }
+    // flex-wrap: wrap;
+    // gap: 20px;
+    // .card {
+    //   width: 100%;
+    //   .card-body {
+    //     text-align: center;
+    //   }
+    // }
   }
 }
 
 @media (max-width: 1199.5px) {
+  .signup-content {
+    .register {
+      width: 100% !important;
+    }
+  }
 }
 
 @media (max-width: 991.5px) {
@@ -215,6 +217,17 @@ body {
 }
 
 @media (max-width: 575.5px) {
+  .container {
+    max-width: 100%;
+  }
+  .container-header {
+    flex-wrap: wrap;
+    .search {
+      order: 2;
+      margin: 20px 0px;
+      width: 100%;
+    }
+  }
   .banner-right {
     width: 100%;
     .ellipse {
@@ -229,6 +242,34 @@ body {
     gap: 20px;
     .register-collapse {
       margin: 0 !important;
+    }
+  }
+  .navbar-collapse {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .ellipse {
+    scale: 0.3 !important;
+    .bars {
+      right: 0 !important;
+    }
+    .circles2 {
+      right: 0 !important;
+    }
+  }
+  .video-bg {
+    width: 100% !important;
+  }
+  .arrow-right {
+    margin-left: 0 !important;
+  }
+  .pricing-content {
+    .card {
+      .card-body {
+        .description {
+          white-space: nowrap;
+        }
+      }
     }
   }
 }

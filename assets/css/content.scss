@@ -34,7 +34,6 @@
         font-weight: 600;
         background-color: #5f4bdb;
         padding: 16px 32px;
-        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
         border-radius: 37px;
         font-size: 1.125rem;
       }
@@ -42,6 +41,7 @@
         transform: scale(1.05);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
+        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
       }
       .play-button {
         padding: 16px;
@@ -142,6 +142,7 @@
   margin-top: 55px;
   .container-guildline {
     display: flex;
+    align-items: center;
     .guildline-left {
       a {
         text-decoration: none;
@@ -154,6 +155,14 @@
         font-weight: 600;
         line-height: 75px;
         color: #363848;
+      }
+      .step-one:hover,
+      .step-two:hover,
+      .step-three:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.14);
+        cursor: pointer;
       }
       .step-one {
         padding: 18px 24px;
@@ -176,7 +185,7 @@
         padding: 18px 24px;
         margin-right: 32px;
         background: #ffffff;
-        box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+        box-shadow: 0px 7px 22px rgba(143, 134, 196, 0.07);
         border-radius: 20px;
         display: flex;
         align-items: flex-start;
@@ -253,89 +262,93 @@
 .feature {
   padding-top: 10.938rem;
   padding-bottom: 7.188rem;
-  position: relative;
-  .feature-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #363848;
-    }
-    a {
-      text-decoration: none;
-      color: #5f4bdb;
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-  }
-  .feature-content {
-    overflow-y: hidden;
-    overflow-x: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.7rem;
-    gap: 2.563rem;
-    .arrow-left {
-      position: absolute;
-      z-index: 1;
-      top: 60%;
-      left: 0;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-    .arrow-right {
-      position: absolute;
-      z-index: 1;
-      top: 60%;
-      right: 0;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-    .card:hover {
-      transform: scale(1.05);
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
-    }
-    .card {
-      border: 1px solid #e5e5e5;
-      width: 374px;
-      padding: 2.5rem;
-      background: #ffffff;
-      border-radius: 18px;
-      .card-body {
-        display: flex;
-        align-items: center;
-        .content {
-          margin-left: 23px;
-          .name {
-            font-size: 1.25rem;
-            font-weight: 600;
-          }
-          .description {
-            margin-top: 5px;
-            font-size: 0.938rem;
-            font-weight: 400;
-          }
-        }
+  .container-feature {
+    position: relative;
+    .feature-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #363848;
       }
-      .card-footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 42px;
-        span {
-          margin-left: 8px;
-          font-weight: 700;
+      a {
+        text-decoration: none;
+        color: #5f4bdb;
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+    }
+    .feature-content {
+      padding: 1.125rem;
+      overflow-y: hidden;
+      overflow-x: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2.7rem;
+      gap: 2.563rem;
+      .arrow-left {
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        left: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .arrow-right {
+        position: absolute;
+        z-index: 1;
+        top: 60%;
+        right: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 11px 39px rgba(0, 0, 0, 0.07);
+      }
+      .card {
+        width: 23.375rem;
+        padding: 2.5rem;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0px 10px 28px rgba(62, 53, 120, 0.07);
+
+        .card-body {
+          display: flex;
+          align-items: center;
+          .content {
+            margin-left: 23px;
+            .name {
+              font-size: 1.25rem;
+              font-weight: 600;
+            }
+            .description {
+              margin-top: 5px;
+              font-size: 0.938rem;
+              font-weight: 400;
+            }
+          }
         }
-        a {
-          text-decoration: none;
-          color: #ffffff;
-          padding: 10px 23px;
-          background-color: #fe8d4d;
-          font-weight: 600;
-          border-radius: 37px;
+        .card-footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 42px;
+          span {
+            margin-left: 8px;
+            font-weight: 700;
+          }
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 23px;
+            background-color: #fe8d4d;
+            font-weight: 600;
+            border-radius: 37px;
+          }
         }
       }
     }
@@ -373,12 +386,14 @@
     margin-top: 5.375rem;
     display: flex;
     .left {
-      .placeholder2 {
-      }
+      position: relative;
       .comma {
-        top: -25px;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
       .circles3 {
+        position: absolute;
         top: 230px;
         left: -46px;
       }
@@ -408,19 +423,24 @@
         }
       }
       .content {
-        margin-top: 30px;
+        margin-top: 1.875rem;
         font-size: 1.125rem;
         font-weight: 400;
         line-height: 28px;
         color: #363848;
       }
       .footer {
-        margin-top: 60px;
+        margin-top: 3.75rem;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: flex-start;
         .arrow-right {
           margin-left: 20px;
+          margin-right: auto;
+        }
+        .arrow-left-white:hover,
+        .arrow-right:hover {
+          cursor: pointer;
         }
       }
     }
@@ -481,9 +501,14 @@
     padding: 0 4rem;
     margin-top: 5.625rem;
     display: flex;
-    justify-content: space-between;
-    .bold-shadow {
-      box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14) !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    .card:hover {
+      box-shadow: 0px 19px 29px rgba(62, 53, 120, 0.14);
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
     }
     .card {
       text-align: center;
@@ -491,6 +516,9 @@
       background-color: #ffffff;
       box-shadow: 0px 10px 28px rgba(62, 53, 120, 0.07);
       border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .card-header {
         .title {
           font-size: 1.75rem;
@@ -529,13 +557,13 @@
           padding: 1rem 6.375rem;
           background-color: #f7f5ff;
           border-radius: 60px;
-          color: #5f4bdb;
           font-size: 1.125rem;
           font-weight: 600;
         }
-        .btn-purple {
+        button:hover {
           background-color: #5f4bdb;
           color: #ffffff;
+          cursor: pointer;
         }
       }
     }
@@ -551,7 +579,7 @@
     align-items: center;
     padding: 107px 0;
     p {
-      width: 750px;
+      width: 46.875rem;
       font-size: 2.75rem;
       font-weight: 600;
       line-height: 76px;
@@ -559,7 +587,7 @@
     }
     .register {
       padding: 10px;
-      width: 546px;
+      width: 34.125rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
